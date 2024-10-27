@@ -20,6 +20,8 @@
     * windows11
   * TinyGo
     * tinygo version 0.33.0 windows/amd64 (using go version go1.22.6 and LLVM version 18.1.2)
+  * Open Weather API
+    * Using One Call API 3.0 (You need to Login and get API key)
 
 # Pin connection
 * Pin definition
