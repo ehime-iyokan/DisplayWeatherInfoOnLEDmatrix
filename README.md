@@ -58,7 +58,7 @@ GND | None
 * Pin connection
   * ![picture](./doc/PinConnection.png)
 * QI 16pin cable
-  * ![picture](./doc/QI16pinCable.png)
+  * ![picture](./doc/QI16PinCable.png)
 
 # Memo
 source code citation [tinygo.org/x/drivers/hub75 (rev.1bf1a11067968352afa5d7a489a13561effb2146)](https://github.com/tinygo-org/drivers/tree/1bf1a11067968352afa5d7a489a13561effb2146/hub75)
