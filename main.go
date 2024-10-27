@@ -1,6 +1,13 @@
 //go:build wioterminal
 
-// memo : build with -stack-size 20KB
+// memo1 : build with -stack-size 20KB
+// memo2 : make .init file(For example:net.init)
+// package main
+// func init() {
+// 	ssid = "???"
+// 	password = "???"
+// 	openWeatherAPIkey = "???"
+// }
 
 package main
 
@@ -423,7 +430,7 @@ var (
 		},
 	}
 
-	//memo 0->黒, 1->白, 2->青, 3->赤, 4->黄
+	//memo : 0->黒, 1->白, 2->青, 3->赤, 4->黄
 	icons = [9]iconData{
 		// "01 clear sky"
 		iconData{
@@ -519,6 +526,8 @@ var (
 )
 
 func main() {
+	// waitSerial()
+
 	netLinker, _ := probe.Probe()
 
 	err := netLinker.NetConnect(&netlink.ConnectParams{
@@ -677,6 +686,8 @@ func putString(h75 Device, vx, vy int, c color.RGBA, str string) {
 	}
 }
 
+// API が返す icon の 数値を利用し 自作した icon を選択する
+// https://openweathermap.org/weather-conditions#How-to-get-icon-URL
 func putIcon(h75 Device, vx, vy int, weatherID string) {
 	index := -1
 	switch weatherID[:2] {
