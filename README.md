@@ -36,11 +36,11 @@ LED matrix Data output|to
 ---|---
 R1 | Wioterminal:SPI_MOSI
 G1 | LED matrix Data output:R2
-B1 | LED matrix Data output:G1
+B1 | LED matrix Data output:G2
 GND | Wioterminal:GND
 R2 | LED matrix Data output:R1
-G2 | LED matrix Data output:R2
-B2 | LED matrix Data output:R2
+G2 | LED matrix Data output:G1
+B2 | LED matrix Data output:B1
 E | None
 A | Wioterminal:D3
 B | Wioterminal:D4
