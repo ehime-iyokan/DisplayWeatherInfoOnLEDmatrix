@@ -32,7 +32,7 @@
       * Pinout Diagram
 * Pin connection
 
-LED matrix Data output|to
+LED matrix Data input| connect to
 ---|---
 R1 | Wioterminal:SPI_MOSI
 G1 | LED matrix Data output:R2
